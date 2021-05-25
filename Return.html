@@ -1,0 +1,131 @@
+<html>
+  <style>
+    <style type="text/css">
+.form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f8f4f4;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f8f4f4;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #efe8e8;
+	color:#a08a8a;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+.form-style-5 select:focus{
+	background: #ddd2d2;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #bc1a1a;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #bc1a1a;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #800f0f;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #911010;
+}
+</style>
+<script>
+  function confirmed(){
+    confirm("Your Return Request Has Been Sent.");
+  }
+  </script>
+  <body>
+<div class="form-style-5">
+<form>
+<fieldset>
+<legend><span class="number">1</span> Personal Information</legend>
+<input type="text" name="userID" placeholder="User ID *">
+<input type="text" name="Email" placeholder="Your Email *">
+<input type = "text" name = "orderno" placeholder = "Order Number *"> <!-- Could be done like this, or we could do as described below-->
+
+
+
+<!-- Use  PHP to load all  order numbers from database maybe??? -->
+<!--
+  <label for="job">Interests:</label>
+  <select id="job" name="field4">
+  <optgroup label="Outdoors">
+  <option value="userID">Football</option>
+  <option value="swimming">Swimming</option>
+  <option value="fishing">Fishing</option>
+  <option value="climbing">Climbing</option>
+  <option value="cycling">Cycling</option>
+  <option value="other_outdoor">Other</option>
+  </select>  
+</optgroup>
+--> 
+    
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Reason for Return</legend>
+<textarea name="field3" placeholder="How was your experience with our product?"></textarea>
+</fieldset>
+<input type="submit" value="Request Return" onsubmit= "confirmed()" onclick ="document.location = ''" /> <!--php submit---> 
+</form>
+</div>
+</body>
+</html>

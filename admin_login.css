@@ -1,0 +1,11 @@
+.adminlogin {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+body, html{
+   background-image: url('https://c4.wallpaperflare.com/wallpaper/790/52/1014/minimalistic-waves-white-gradient-wallpaper-preview.jpg');
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

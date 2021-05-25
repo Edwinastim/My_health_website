@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="us-ascii">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Searchbar.css" rel="stylesheet" />
+	<style type="text/css">body {
+				margin: 10px;
+				background-image: url('https://c4.wallpaperflare.com/wallpaper/790/52/1014/minimalistic-waves-white-gradient-wallpaper-preview.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+
+			h1 {
+				font-family: Copperplate, Papyrus, fantasy;
+				font-size: 80px;
+				offset: 20;
+				color: #872d0f;
+			}
+
+			p {
+				color: #cc481d;
+			}
+
+			.divider {
+				width: 5px;
+				height: auto;
+				display: inline-block;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #cc481d;
+
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: left;
+				padding: 20px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #872d0f
+			}
+
+			.active {
+				background-color: #ffff;
+				color: #cc481d;
+			}
+            .wrapper{
+                max-width: 450px;
+                margin: 10px auto;
+                }
+    
+                .wrapper .search-input{
+                background: #fff;
+                width: 100%;
+                border-radius: 5px;
+                position: relative;
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+                }
+    
+                .search-input input{
+                height: 35px;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 0 60px 0 20px;
+                font-size: 18px;
+                box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+                }
+                .search-input.active input{
+                border-radius: 5px 5px 0 0;
+                }
+    
+                .search-input .autocom-box{
+                padding: 0;
+                opacity: 50;
+                pointer-events: none;
+                max-height: 280px;
+                overflow-y: auto;
+                }
+                .search-input.active .autocom-box{
+                padding: 10px 8px;
+                opacity: 1;
+                pointer-events: auto;
+                }
+                
+                .autocom-box li{
+                list-style: none;
+                padding: 8px 12px;
+                display: none;
+                width: 100%;
+                cursor: default;
+                border-radius: 3px;
+                }
+    
+                .search-input.active .autocom-box li{
+                display: block;
+                }
+                .autocom-box li:hover{
+                background: #efefef;
+                }
+    
+                .search-input .icon{
+                
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 55px;
+                width: 55px;
+                text-align: center;
+                line-height: 39px;
+                font-size: 20px;
+                color: #cc481d;
+                cursor: pointer;
+                }
+	</style>
+</head>
+<script src="https://kit.fontawesome.com/e7d7974425.js" crossorigin="anonymous"></script><!--</head>-->
+<body>
+<ul>
+	<li><a class="active" href="#home">Home</a></li>
+	<li style="text-align: left"><a href="Cart.html">View Cart</a></li>
+	<li style="text-alight: right"><a href="Profile.html">Profile</a></li>
+	<li>
+	<div class="wrapper">
+	<div class="search-input"><input placeholder="Type to search.." type="text" />
+	<div class="autocom-box"><!-- here list are inserted from javascript --></div>
+
+	<div class="icon"></div>
+	</div>
+	</div>
+	</li>
+</ul>
+
+<div adding:="" style="p"></div>
+<style type="text/css">* {
+						box-sizing: border-box;
+					}
+
+					body {
+						margin: 0;
+						font-family: Arial;
+					}
+
+					.header {
+						text-align: center;
+						padding: 32px;
+					}
+
+					.row {
+						display: -ms-flexbox;
+						/* IE10 */
+						display: flex;
+						-ms-flex-wrap: wrap;
+						/* IE10 */
+						flex-wrap: wrap;
+						padding: 0 4px;
+					}
+
+					/* Create four equal columns that sits next to each other */
+					.column {
+						-ms-flex: 20%;
+						/* IE10 */
+						flex: 20%;
+						max-width: 20%;
+						padding: 0 4px;
+					}
+
+					.column img {
+						margin-top: 8px;
+						vertical-align: middle;
+						width: 100%;
+					}
+
+					/* Responsive layout - makes a two column-layout instead of four columns */
+					@media screen and (max-width: 800px) {
+						.column {
+							-ms-flex: 50%;
+							flex: 50%;
+							max-width: 50%;
+						}
+					}
+
+					/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+					@media screen and (max-width: 600px) {
+						.column {
+							-ms-flex: 100%;
+							flex: 100%;
+							max-width: 100%;
+						}
+
+					}
+</style>
+<div><!-- Header -->
+<div class="header">
+<h1>Health 415</h1>
+
+<p>Welcome to the one-stop shop for the world&#39;s best health products!</p>
+</div>
+<!-- Photo Grid -->
+
+<div class="row">
+<div class="column"><a href="1Product.html"><img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=2164&amp;q=80" style="width:100%" /> </a><a href="2Product.html"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1915&amp;q=80" style="width:100%" /> </a><a href="3Product.html"><img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2220&amp;q=80" style="width:100%" /> </a><a href="4Product.html"><img src="https://images.unsplash.com/photo-1581159186721-b68b78da4ec9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1534&amp;q=80" style="width:100%" /> </a><a href="5Product.html"><img src="https://images.unsplash.com/photo-1555633514-abcee6ab92e1?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1400&amp;q=80" style="width:100%" /> </a><a href="6Product.html"><img src="https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1534&amp;q=80" style="width:100%" /> </a></div>
+
+<div class="column"><a href="7Product.html"><img src="https://images.unsplash.com/photo-1573883431205-98b5f10aaedb?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" style="width:100%" /> </a><a href="8Product.html"><img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1277&amp;q=80" style="width:100%" /> </a><a href="9Product.html"><img src="https://images.unsplash.com/photo-1577563782818-f7067373326c?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=2955&amp;q=80" style="width:100%" /> </a><a href="10Product.html"><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" style="width:100%" /> </a><a href="11Product.html"><img src="https://images.unsplash.com/photo-1523243319451-54b60322f948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" style="width:100%" /> </a><a href="12Product.html"><img src="https://images.unsplash.com/photo-1583088580067-16d1109aeacb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1535&amp;q=80" style="width:100%" /> </a></div>
+
+<div class="column"><a href="13Product.html"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1949&amp;q=80" style="width:100%" /> </a><a href="14Product.html"><img src="https://images.unsplash.com/photo-1543709533-c032159da7b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" style="width:100%" /> </a><a href="15Product.html"><img src="https://images.unsplash.com/photo-1523245332310-ff40ff34a419?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" style="width:100%" /> </a><a href="16Product.html"><img src="https://images.unsplash.com/photo-1584308878768-57d3387b1882?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1960&amp;q=80" style="width:100%" /> </a><a href="17Product.html"><img src="https://images.unsplash.com/photo-1612869746134-bd7f98a33812?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1867&amp;q=80" style="width:100%" /> </a><a href="18Product.html"><img src="https://images.unsplash.com/photo-1610542443439-279b81fba808?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1296&amp;q=80" style="width:100%" /> </a></div>
+
+<div class="column"><a href="19Product.html"><img src="https://images.unsplash.com/photo-1544991936-9464fa9919d2?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="20Product.html"><img src="https://images.unsplash.com/photo-1565071783280-719b01b29912?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="21Product.html"><img src="https://images.unsplash.com/photo-1573207185685-5109f337fdf6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzJ8fG1lZGljaW5lfGVufDB8fDB8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=60" style="width:100%" /> </a><a href="22Product.html"><img src="https://images.unsplash.com/photo-1558956397-24d60741abc2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80" style="width:100%" /> </a><a href="23Product.html"><img src="https://images.unsplash.com/photo-1544829885-9a58b457fd5a?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="24Product.html"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1949&amp;q=80" style="width:100%" /> </a></div>
+
+<div class="column"><a href="25Product.html"><img src="https://images.unsplash.com/photo-1563213126-a4273aed2016?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="26Product.html"><img src="https://images.unsplash.com/photo-1576073218292-976931ec70ca?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1265&amp;q=80" style="width:100%" /> </a><a href="27Product.html"><img src="https://images.unsplash.com/photo-1558956397-1826756a58dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80" style="width:100%" /> </a><a href="28Product.html"><img src="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="29Product.html"><img src="https://images.unsplash.com/photo-1544965367-91d108669d2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="width:100%" /> </a><a href="30Product.html"><img src="https://images.unsplash.com/photo-1567333971983-7ba18485eaad?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80" style="width:100%" /> </a></div>
+</div>
+</div>
+
+<p><a href="30Product.html"><script src="suggestions.js"></script> <script src="scriptSearch.js"></script> </a></p>
+</body>
+</html>

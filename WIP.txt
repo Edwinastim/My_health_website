@@ -1,0 +1,28 @@
+
+User Profile Page  
+----> generic profile page with icon and name (php variable)
+---> Reached after user logs in
+--> allows users to see their receipt history + check marks to it and a submit button and the bottom that allows them to start   a return 
+---> 
+
+
+Admin nav bar (Britnie, WIP){
+Users ---> Users who use the website  ---> Purchase history && Receipts + Start a return 
+
+  Catalogue ---> Place where you can write sql statements to update catalogue + View live catalogue + view current  table (auto loads current table)
+
+
+  Settings (Sign out)--> Signs you out of admin page (gives a temporary reload screen that sends you to the login page after  timer times out)
+
+}
+
+
+Welcome Page / Landing Page
+- Login button 
+- Sign Up button 
+- small tag description of the website
+- overlay 
+
+
+DISCALIMER ----------
+All this needs to be uploaded to the admin console on Azure before any php is added

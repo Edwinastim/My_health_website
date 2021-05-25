@@ -1,0 +1,285 @@
+<!--Landing Page
+
+This will essentially be the first thing that users see when they enter the website
+
+--> 
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Federo);
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    position: relative; /* needed for the overlay to extend when you scroll */
+    /* general styles */
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background: #f1c40f;
+    color: #fff;
+}
+
+/* overlay styles, all needed */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(200,200,200,0.7);
+    z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+  
+
+
+    width: 500px;
+    height: 500px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -250px;
+  
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
+    
+}
+
+.content {
+    margin: 30px;
+}
+
+
+.button3 {
+  background-color: white; 
+  	font-size: 20px;
+		offset: 20;
+		color: #872d0f;
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #bf0000;
+  color: white;
+}
+
+
+  </style>
+<html>
+  <body>
+    <div class="overlay"></div>
+  <div class="modal">
+   <h1> Health 415 </h1>
+    <div class = 'button3' onclick = "document.location = 'login.html'">Enter Site</div>
+ 
+    </div>  
+    
+
+  <div class="content">
+    
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<head>
+                                  
+		<style>
+			body {
+				margin: 10px;
+				background-image: url('https://c4.wallpaperflare.com/wallpaper/790/52/1014/minimalistic-waves-white-gradient-wallpaper-preview.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+
+			h1 {
+				font-family: Copperplate, Papyrus, fantasy;
+				font-size: 80px;
+				offset: 20;
+				color: #872d0f;
+			}
+
+			p {
+				color: #cc481d;
+			}
+
+			.divider {
+				width: 5px;
+				height: auto;
+				display: inline-block;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #cc481d;
+
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: left;
+				padding: 20px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #872d0f
+			}
+
+			.active {
+				background-color: #ffff;
+				color: #cc481d;
+			}
+		</style>
+		<!--</head>-->
+
+		<body>
+
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li style="text-align: left"><a href="Cart.html">View Cart</a></li>
+				<li style="text-alight: right"><a href="Profile.html">Profile</a></li>
+
+			</ul>
+
+			<div style=p adding: "20px;margin-top:30px;"background-color:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)>
+
+
+				<html>
+				<style>
+					* {
+						box-sizing: border-box;
+					}
+
+					body {
+						margin: 0;
+						font-family: Arial;
+					}
+
+					.header {
+						text-align: center;
+						padding: 32px;
+					}
+
+					.row {
+						display: -ms-flexbox;
+						/* IE10 */
+						display: flex;
+						-ms-flex-wrap: wrap;
+						/* IE10 */
+						flex-wrap: wrap;
+						padding: 0 4px;
+					}
+
+					/* Create four equal columns that sits next to each other */
+					.column {
+						-ms-flex: 20%;
+						/* IE10 */
+						flex: 20%;
+						max-width: 20%;
+						padding: 0 4px;
+					}
+
+					.column img {
+						margin-top: 8px;
+						vertical-align: middle;
+						width: 100%;
+					}
+
+					/* Responsive layout - makes a two column-layout instead of four columns */
+					@media screen and (max-width: 800px) {
+						.column {
+							-ms-flex: 50%;
+							flex: 50%;
+							max-width: 50%;
+						}
+					}
+
+					/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+					@media screen and (max-width: 600px) {
+						.column {
+							-ms-flex: 100%;
+							flex: 100%;
+							max-width: 100%;
+						}
+
+					}
+				</style>
+
+				<div>
+					<!-- Header -->
+					<div class="header">
+						<h1>Health 415</h1>
+						<p>Welcome to the one-stop shop for the world's best health products!</p>
+					</div>
+
+					<!-- Photo Grid -->
+					<div class="row">
+						<div class="column">
+
+							<a href="1Product.html"><img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2164&q=80" style="width:100%">
+    <a href="2Product.html"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1915&q=80" style="width:100%">
+    <a href="3Product.html"><img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2220&q=80" style="width:100%">
+    <a href="4Product.html"><img src="https://images.unsplash.com/photo-1581159186721-b68b78da4ec9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" style="width:100%">
+    <a href="5Product.html"><img src="https://images.unsplash.com/photo-1555633514-abcee6ab92e1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80" style="width:100%">
+    <a href="6Product.html"><img src="https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1534&q=80" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="7Product.html"><img src="https://images.unsplash.com/photo-1573883431205-98b5f10aaedb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+    <a href="8Product.html"><img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1277&q=80" style="width:100%">
+    <a href="9Product.html"><img src="https://images.unsplash.com/photo-1577563782818-f7067373326c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2955&q=80" style="width:100%">
+    <a href="10Product.html"><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+    <a href="11Product.html"><img src="https://images.unsplash.com/photo-1523243319451-54b60322f948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+    <a href="12Product.html"><img src="https://images.unsplash.com/photo-1583088580067-16d1109aeacb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1535&q=80" style="width:100%">
+  </div>  
+  <div class="column">
+    <a href="13Product.html"><img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80" style="width:100%">
+    <a href="14Product.html"><img src="https://images.unsplash.com/photo-1543709533-c032159da7b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+    <a href="15Product.html"><img src="https://images.unsplash.com/photo-1523245332310-ff40ff34a419?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+    <a href="16Product.html"><img src="https://images.unsplash.com/photo-1584308878768-57d3387b1882?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1960&q=80" style="width:100%">
+    <a href="17Product.html"><img src="https://images.unsplash.com/photo-1612869746134-bd7f98a33812?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80" style="width:100%">
+    <a href="18Product.html"><img src="https://images.unsplash.com/photo-1610542443439-279b81fba808?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=80" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="19Product.html"><img src="https://images.unsplash.com/photo-1544991936-9464fa9919d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+    <a href="20Product.html"><img src="https://images.unsplash.com/photo-1565071783280-719b01b29912?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+    <a href="21Product.html"><img src="https://images.unsplash.com/photo-1573207185685-5109f337fdf6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzJ8fG1lZGljaW5lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" style="width:100%">
+    <a href="22Product.html"><img src="https://images.unsplash.com/photo-1558956397-24d60741abc2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+    <a href="23Product.html"><img src="https://images.unsplash.com/photo-1544829885-9a58b457fd5a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+    <a href="25Product.html"><img src="https://images.unsplash.com/photo-1563213126-a4273aed2016?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+  </div>
+   <div class="column">
+    <a href="26Product.html"><img src="https://images.unsplash.com/photo-1576073218292-976931ec70ca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1265&q=80" style="width:100%">
+    <a href="27Product.html"><img src="https://images.unsplash.com/photo-1558956397-1826756a58dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+    <a href="28Product.html"><img src="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+    <a href="29Product.html"><img src="https://images.unsplash.com/photo-1544965367-91d108669d2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" style="width:100%">
+    <a href="30Product.html"><img src="https://images.unsplash.com/photo-1567333971983-7ba18485eaad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+  </div>
+</div>
+</div>
+</body>
+</html>
+  </div>
+    </body>
+</html>
